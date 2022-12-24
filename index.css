@@ -86,7 +86,6 @@ body{
 }
 
 .card{
-    opacity: 0.9;
     width: 240px;
     background:var(--primary-color);
     margin: 10px 10px;
@@ -94,12 +93,14 @@ body{
     align-items: center;
     justify-content: center;
     padding: 1px;
-    border-radius: 0px;
+    border-radius: 8px;
+    transition: all 0.5s;
 }
 
 .card:hover{
     background:var(--primary-gradient);
     box-shadow: 1px 1px 20px #77b6ff22;
+    scale: 1.05;
 }
 
 .cardlink{
@@ -114,6 +115,7 @@ body{
 }
 
 .cardlink img{
+    opacity: 1;
     width: 178px;
     height: 178px;
     padding: 30px;
